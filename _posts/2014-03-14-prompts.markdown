@@ -18,3 +18,24 @@ Once I discovered Zsh though, I spent a few minutes setting up exactly the
 prompt I wanted. What I ended up with was this:
 
 ![zsh prompt](/img/prompt.png)
+
+On the left hand side, the prompt is the bare minimum. `$`. It means all my
+commands are lined up, regardless of how deep I am into the filesystem. And
+there's something nice about the simplicity of it.
+
+On the right hand side, I have, from left to right:
+
+  - username@hostname, giving me context on who and where I am
+  - my working directory
+  - this is my favorite addition: git branch, an optional character showing
+    whether or not the current repository has been edited, and the short
+    version of the hash of the current commit. This is awesome. It means I
+    don't need to dig into `git reflog` when I need to revert to a previous
+    commit, as long as I can grab it from my history. It means I never think
+    I'm running code from a clean working directory when I've actually made
+    changes, or think I'm on a different branch than I actually am.
+
+Code for the prompt is in a [gist here](https://gist.github.com/johnswanson/9562223).
+To use it, you'll need to install oh-my-zsh, put this in your `~/.oh-my-zsh/themes/`
+directory, and add `ZSH_THEME="[filename]"` to your `~/.zshrc` (substituting
+whatever you named the theme).

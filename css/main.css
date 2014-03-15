@@ -44,8 +44,8 @@ a:visited { color: #a0a; }
 }
 
 .posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
+  color: #ccc;
+  font-family: "Source Code Pro", "Courier New", monospace;
   font-size: 80%;
 }
 
@@ -71,14 +71,15 @@ a:visited { color: #a0a; }
 .title {
   display: inline-block;
   margin-bottom: 2em;
+  font-size: 2em;
 }
 
 .title a {
-  color: #a00;
+  color: #F60076;
 }
 
 .title a:hover {
-  color: #000;
+  color: #AA002A;
 }
 
 .header a.extra {
@@ -120,6 +121,17 @@ a:visited { color: #a0a; }
 .footer .rss img {
   border: 0;
 }
+
+div.circular#me-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  background: url(/img/me.png) no-repeat;
+  border: 1px solid #222;
+}
+
 
 /*****************************************************************************/
 /*

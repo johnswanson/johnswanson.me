@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <script>
+  window.onload = function() {
+    // yes, I know that PhantomJS will get around this. :)
+    var e = document.getElementById("email");
+    var hex = "6a6f686e2e642e7377616e736f6e40676d61696c2e636f6d";
+    var hex_alpha = "0123456789abcdef";
+    var email = "";
+    for (var i = 0; i < hex.length; i+=2) {
+      var first = hex_alpha.indexOf(hex[i]);
+      var second = hex_alpha.indexOf(hex[i+1]);
+      var c = String.fromCharCode((first << 4) | second);
+      email += c;
+    }
+    e.setAttribute("href", "mailto:"+email);
+    e.textContent = email;
+  }
+      </script>
         <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700' rel='stylesheet' type='text/css'>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -19,7 +36,6 @@
         <div class="site">
           <div class="header">
             <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
           </div>
 
           {{ content }}
@@ -27,35 +43,14 @@
           <div class="footer">
             <div class="contact">
               <p>
-                John Swanson<br />
-                has fun coding.<br />
+                I work for DreamHost. I bike to work. I like building things.
+                Mostly with code.
               </p>
-              <p id="email"></p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/johnswanson</a><br />
-              </p>
+              <div class="circular" id="me-img"></div>
+              <p><a id="email" href=""></a>
+              <p><a href="https://github.com/yourusername">github.com/johnswanson</a><br />
             </div>
           </div>
         </div>
-
     </body>
-    <script>
-window.onload = function() {
-  // yes, I know that PhantomJS will get around this. :)
-  var e = document.getElementById("email");
-  var hex = "6a6f686e2e642e7377616e736f6e40676d61696c2e636f6d";
-  var hex_alpha = "0123456789abcdef";
-  var email = "";
-  for (var i = 0; i < hex.length; i+=2) {
-    var first = hex_alpha.indexOf(hex[i]);
-    var second = hex_alpha.indexOf(hex[i+1]);
-    var c = String.fromCharCode((first << 4) | second);
-    email += c;
-  }
-  e.textContent = email;
-}
-    </script>
-
 </html>
