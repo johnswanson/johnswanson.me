@@ -1,0 +1,20 @@
+---
+layout: post
+title: "My Zsh prompt"
+date: 2014-03-14 21:48:00
+categories: zsh prompt
+---
+
+I'm not a big fan of some of the more elaborate prompts out there. Something in
+me likes the bare simplicity of the prompt you get with a fresh install of
+linux:
+
+`$`
+
+But of course you lose all the benefits of having a more comprehensive prompt.
+For example, it's pretty great to know at a glance what directory you're in.
+
+Once I discovered Zsh though, I spent a few minutes setting up exactly the
+prompt I wanted. What I ended up with was this:
+
+![zsh prompt](/img/prompt.png)
