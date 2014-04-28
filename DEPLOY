@@ -1,3 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
-s3cmd -c ~/.s3cfg.aws --delete-removed sync ./_site/ s3://johnswanson.me/
+jekyll build
+s3cmd --delete-removed sync ./_site/ s3://johnswanson.me/

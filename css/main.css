@@ -14,7 +14,7 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  font: 13.34px 'Droid Serif', serif;
+  font: 13.34px 'Open Sans', sans-serif;
   font-size: small;
   text-align: center;
 }
@@ -80,7 +80,7 @@ h4 {
 }
 
 .header a {
-  font-family: "Source Code Pro", monospace;
+  font-family: "Open Sans", sans-serif;
   font-weight: 200;
   text-decoration: none;
 }
@@ -138,9 +138,9 @@ div.header {
 div.circular#me-img {
   width: 140px;
   height: 140px;
-  border-radius: 70px;
-  -webkit-border-radius: 70px;
-  -moz-border-radius: 70px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   background: url(/img/me.png) no-repeat;
   border: 1px solid #222;
 }
