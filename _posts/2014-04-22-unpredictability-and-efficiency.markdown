@@ -19,7 +19,7 @@ more like a lottery than a basketball game. They seemed to find a tiny amount
 of skill at the upper end of the spectrum, but this was overwhelmed by mutual
 fund fees.
 
-In the face of this evidence, opponents of the EMH sometimes turn to the
+In the face of this evidence, critics of the EMH sometimes turn to the
 following argument:
 
 > Just because the market is unpredictable does not mean that the market is
