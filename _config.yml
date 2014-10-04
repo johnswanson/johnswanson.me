@@ -1,4 +1,4 @@
-name: johnswanson.me
+name: less.sexy
 markdown: redcarpet
 pygments: true
 exclude: ["DEPLOY"]
